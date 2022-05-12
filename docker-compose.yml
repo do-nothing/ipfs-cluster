@@ -31,6 +31,12 @@ services:
 ##################################################################################
 ## Cluster PEER 0 ################################################################
 ##################################################################################
+  ipfscluster:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    image: harbor.lindensys.com/lindencloud/ipfs-cluster:0.1.0-SNAPSHOT
+
 
   ipfs0:
     container_name: ipfs0

@@ -49,6 +49,7 @@ ENV IPFS_CLUSTER_DATASTORE leveldb
 EXPOSE 9094
 EXPOSE 9095
 EXPOSE 9096
+EXPOSE 9097
 
 COPY --from=builder $GOPATH/bin/ipfs-cluster-service /usr/local/bin/ipfs-cluster-service
 COPY --from=builder $GOPATH/bin/ipfs-cluster-ctl /usr/local/bin/ipfs-cluster-ctl
